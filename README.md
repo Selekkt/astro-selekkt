@@ -3,6 +3,8 @@
 ## Get Started
 
 ```
+# Navigate to your project directory
+
 cd your-project
 
 # get astro-skelet
@@ -22,6 +24,12 @@ npm start
 npm run build
 ```
 
-Navigate to `src/data/site.js` and edit to match your site's information.
+Navigate to `src/data/config.js` and edit to match your site's information.
 
-Start writing new blog posts in Markdown at `src/pages/blog/`
+Write your blog posts in Markdown at `src/pages/blog/`
+
+Create your pages in HTML at `src/pages/`
+
+---
+
+This is a fork of [astro-minimal-starter](https://github.com/jaydanurwin/astro-minimal-starter/)
