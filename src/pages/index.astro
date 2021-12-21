@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+let title = 'Astro Minimal Starter';
+let description = 'This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support.';
+let permalink = 'https://example.com/';
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href}>
+    <h1>{title}</h1>
+    <p>{description}</p>
+</BaseLayout>

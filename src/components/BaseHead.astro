@@ -1,0 +1,61 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  permalink: string;
+  publishDate: string;
+  ogImageUrl: string;
+  themeColor: string;
+  canonicalURL?: string;
+  articleSchema?: boolean;
+}
+
+import ArticleSchema from "./ArticleSchema.jsx";
+import site from "../data/config.js";
+
+const { title, siteName, description, permalink, publishDate, ogImageUrl, canonicalURL, articleSchema, themeColor } = Astro.props;
+---
+<head>
+    <meta charset="utf-8">
+    <title>{title || site.title} - {siteName || site.siteName }</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Skelet." property="Sēlekkt. Studio" content="https://selekkt.dk/skelet/v3/">
+
+    <meta name="theme-color" content={themeColor || site.themeColor}>
+
+    <meta name="description" content={description || site.description}>
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+    
+    <!-- Facebook OG Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content={canonicalURL || site.url}>
+    <meta property="og:site_name" content={siteName || site.siteName}>
+    <meta property="og:title" content={title || site.title}>
+    <meta property="og:description" content={description || site.description}>
+    <meta property="og:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` : `${site.url}/social.jpg`}>
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title || site.title}>
+    <meta name="twitter:description" content={description || site.description}>
+
+    <link rel="sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title={`${site.name} Blog`} href={`${site.url}/feed/blog.xml`}/>
+    
+    <link rel="canonical" href={canonicalURL}>
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+
+    <script>document.documentElement.className = 'js';</script>
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <link rel="stylesheet" href="/css/skelet.css">
+    <link rel="stylesheet" href="/css/app.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+    {articleSchema && (<ArticleSchema title={title} description={description} permalink={permalink} publishDate={publishDate} ogImageUrl={ogImageUrl} />)}
+</head>

@@ -1,0 +1,23 @@
+---
+import site from "../data/config.js";
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const {title, description, permalink, canonicalURL } = Astro.props;
+---
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <BaseHead title={title} description={description} permalink={permalink} canonicalURL={canonicalURL} />
+    </head>
+    <body>
+    <div id="app">
+        <Header/> 
+        <main>
+            <slot/>
+        </main>
+        <Footer/>
+    </div>
+    </body>
+</html>
