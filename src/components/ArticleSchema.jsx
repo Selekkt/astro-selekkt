@@ -23,7 +23,11 @@ function ArticleSchema({title, permalink, publishDate, ogImageUrl, description})
                 `${site.url}`,
                 `${site.facebookURL}`,
                 `${site.twitterURL}`,
-                `${site.instagramURL}`
+                `${site.instagramURL}`,
+                `${site.telegramURL}`,
+                `${site.pinterest}`,
+                `${site.redditURL}`,
+                `${site.discordURL}`
             ]
         },
         "headline": `${title}`,
