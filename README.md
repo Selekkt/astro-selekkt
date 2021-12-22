@@ -1,5 +1,8 @@
 # astro-skelet
 
+## Demo
+(Try it)[https://stackblitz.com/github/selekkt/astro-skelet/tree/main]
+
 ## Get Started
 
 ```
