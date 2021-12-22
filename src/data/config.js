@@ -10,6 +10,7 @@ export default {
     twitterURL: `https://twitter.com/selekktstudio`,
     instagramURL: `https://instagram.com/selekkt.studio`,
     telegramURL: `https://t.me/`,
+    pinterestURL: `https://pinterest.com/`,
     redditURL: `https://reddit.com/`,
     discordURL: `https://discord.com/`
 }
