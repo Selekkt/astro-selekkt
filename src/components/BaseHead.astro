@@ -13,11 +13,11 @@ export interface Props {
 import ArticleSchema from "./ArticleSchema.jsx";
 import site from "../data/config.js";
 
-const { title, siteName, description, permalink, publishDate, ogImageUrl, canonicalURL, articleSchema, themeColor } = Astro.props;
+const { title, name, description, permalink, publishDate, ogImageUrl, canonicalURL, articleSchema, themeColor } = Astro.props;
 ---
 <head>
     <meta charset="utf-8">
-    <title>{title || site.title} - {siteName || site.siteName }</title>
+    <title>{title || site.title} - {name || site.name }</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="Skelet." property="Sēlekkt. Studio" content="https://selekkt.dk/skelet/v3/">
@@ -30,7 +30,7 @@ const { title, siteName, description, permalink, publishDate, ogImageUrl, canoni
     <!-- Facebook OG Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content={canonicalURL || site.url}>
-    <meta property="og:site_name" content={siteName || site.siteName}>
+    <meta property="og:site_name" content={name || site.name}>
     <meta property="og:title" content={title || site.title}>
     <meta property="og:description" content={description || site.description}>
     <meta property="og:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` : `${site.url}/social.jpg`}>
