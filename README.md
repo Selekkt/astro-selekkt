@@ -1,7 +1,7 @@
 # astro-skelet
 
 ## Demo
-[Try it](https://stackblitz.com/github/selekkt/astro-skelet/tree/main)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/selekkt/astro-skelet/tree/mai)
 
 ## Get Started
 
