@@ -1,9 +1,11 @@
-# astro-skelet
+# astro-Skelet
 
-## Demo
+
+## 👀 Demo
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/selekkt/astro-skelet/tree/main)
 
-## 🚀 Get Started
+
+## 🚀 Get started
 
 | Command												| Action										 |
 |:------------------------------------------------------|:-----------------------------------------------|
@@ -14,7 +16,8 @@
 | `npm run build`										| Build your production site to `./dist/`        |
 | `npm run preview`										| Preview your build locally, before deploying   |
 
-## Next
+
+## 🛠 Next
 - Navigate to `src/data/config.js` and edit to match your site's information.
 
 - Write your blog posts in Markdown at `src/pages/blog/`
