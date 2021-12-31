@@ -3,28 +3,17 @@
 ## Demo
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/selekkt/astro-skelet/tree/main)
 
-## Get Started
+## 🚀 Get Started
 
-```
-# Navigate to your project directory
+| Command												| Action										 |
+|:------------------------------------------------------|:-----------------------------------------------|
+| `cd your-project`										| Navigate to the astro directory                |
+| `git clone https://github.com/Selekkt/astro-skelet.git` | clone astro-Skelet 							 |
+| `npm install`											| Installs dependencies (run only the first time)|
+| `npm start`											| Starts local dev server at `localhost:3000`    |
+| `npm run build`										| Build your production site to `./dist/`        |
+| `npm run preview`										| Preview your build locally, before deploying   |
 
-cd your-project
-
-# get astro-skelet
-
-git clone https://github.com/Selekkt/astro-skelet.git
-
-# Install
-
-npm i
-
-# Run Site locally
-
-npm start
-
-# Build Site
-
-npm run build
 ```
 
 Navigate to `src/data/config.js` and edit to match your site's information.
