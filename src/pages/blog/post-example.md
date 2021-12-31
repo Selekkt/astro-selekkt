@@ -3,7 +3,7 @@ setup: |
   import Layout from '../../layouts/BlogPostLayout.astro';
 title: Example Blog
 description: This is an example blog post
-publishDate: December 21 2021
+publishDate: December 31 2021
 permalink: https://example.com/blog/example-blog
 author: "Selekkt. studio"
 heroImage: "/media/blog/post-example/@doilooklikeiselldrugs.jpg"
