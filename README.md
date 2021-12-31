@@ -14,13 +14,14 @@
 | `npm run build`										| Build your production site to `./dist/`        |
 | `npm run preview`										| Preview your build locally, before deploying   |
 
-```
+## Next
+- Navigate to `src/data/config.js` and edit to match your site's information.
 
-Navigate to `src/data/config.js` and edit to match your site's information.
+- Write your blog posts in Markdown at `src/pages/blog/`
 
-Write your blog posts in Markdown at `src/pages/blog/`
+- Create your pages in HTML at `src/pages/`
 
-Create your pages in HTML at `src/pages/`
+- Create your components at `components/`
 
 ---
 
